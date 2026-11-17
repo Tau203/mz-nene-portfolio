@@ -13,7 +13,7 @@ export const profile = {
   phone: '078 087 4425',
   phoneLink: '+27780874425',
   cv: 'documents/Mzikayise_Nene_Professional_CV.pdf',
-  heroImage: 'images/industrial plant sunset.jpeg',
+  heroImage: '', // optional: put your own licensed photo in public/images/ and set e.g. 'images/hero.jpg'
 }
 export const about = [
   'Mzikayise Nene is an experienced construction and industrial supervisor with practical experience across major engineering, construction, maintenance and industrial project environments.',
@@ -84,10 +84,3 @@ export const certs: Cert[] = [
   { title: 'Select, Use and Care for Engineering Power Tools', provider: 'EFS Skilled Labour Training', number: 'EPT/025/2026', issued: '8 February 2026', renewal: 'Not stated on certificate', saqa: '12219' },
 ]
 export const safety = ['Occupational health and safety awareness', 'Mine health and safety legislation awareness', 'Workplace risk assessment', 'Site inspections', 'Toolbox talks', 'Safety inductions', 'Fall arrest training', 'First aid training', 'Safe use of engineering power tools', 'Equipment and workplace hazard awareness']
-export const kindImages: Record<string, string> = {
-  Boilermaking: 'images/boiler power station.jpeg',
-  Piping: 'images/industrial piping.jpeg',
-  Structural: 'images/steel structure construction site.jpeg',
-  Site: 'images/construction supervisor hard hat.jpeg',
-  Mechanical: 'images/industrial plant sunset.jpeg',
-}

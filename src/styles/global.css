@@ -20,7 +20,7 @@ nav a:hover,nav a.active{opacity:1}nav a:hover::after,nav a.active::after{transf
 .burger{display:none;background:none;border:0;color:#fff;cursor:pointer;padding:6px}
 /* hero */
 .hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;padding:110px 0 70px;overflow:hidden;
-background:linear-gradient(160deg,var(--navy) 0%,var(--char) 60%,var(--slate) 120%);background-size:cover;background-position:center}
+background:linear-gradient(160deg,var(--navy) 0%,var(--char) 60%,var(--slate) 120%) center/cover}
 .steel{position:absolute;inset:0;opacity:.28;pointer-events:none}.steel svg{width:100%;height:100%}
 .draw path{stroke-dasharray:3200;stroke-dashoffset:3200;animation:draw 3.2s ease-out .3s forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
@@ -67,7 +67,8 @@ h2{font-size:clamp(1.9rem,4vw,2.7rem);font-weight:800;letter-spacing:-.01em}
 .panel ul{margin:0;padding-left:20px;columns:2;column-gap:36px}.panel li{margin-bottom:8px;break-inside:avoid}
 .note{font-size:.9rem;color:var(--slate);margin-top:24px}
 /* projects */
-.pcard{background-color:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);position:relative;overflow:hidden;min-height:190px;background-size:cover;background-position:center}
+.pcard{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);position:relative;overflow:hidden;min-height:190px;
+background-image:repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 2px,transparent 2px 22px)}
 .pcard:hover{transform:translateY(-5px);border-color:var(--bronze)}
 .pcard::after{content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;background:var(--bronze);transform:scaleX(.18);transform-origin:left;transition:transform .45s}.pcard:hover::after{transform:scaleX(1)}
 .tag{display:inline-block;font-size:.8rem;font-weight:600;border:1px solid var(--bronze);color:var(--bronze);padding:2px 10px;border-radius:99px;margin-bottom:14px}

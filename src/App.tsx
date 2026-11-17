@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState, type ReactNode } from 'react'
 import { Menu, X, Download, Mail, Phone, MapPin, ChevronDown, Award, HardHat, Cog, Flame, Building2, Workflow, Users, ShieldCheck, CheckCircle2 } from 'lucide-react'
-import { profile, about, expertise, jobs, projects, skills, certs, safety, kindImages } from './data/data'
+import { profile, about, expertise, jobs, projects, skills, certs, safety } from './data/data'
 
 const icons: Record<string, typeof Cog> = { Cog, Flame, Building2, Workflow, Users, ShieldCheck }
-const asset = (p: string) => import.meta.env.BASE_URL + encodeURI(p)
+const asset = (p: string) => import.meta.env.BASE_URL + p
 const nav = [['home', 'Home'], ['about', 'About'], ['expertise', 'Expertise'], ['experience', 'Experience'], ['projects', 'Projects'], ['skills', 'Skills'], ['certifications', 'Certifications'], ['education', 'Education'], ['contact', 'Contact']]
 
 function Reveal({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
@@ -57,7 +57,7 @@ function Header() {
 }
 
 function Hero() {
-  const style = profile.heroImage ? { backgroundImage: `linear-gradient(rgba(20,35,51,.78),rgba(20,35,51,.92)),url("${asset(profile.heroImage)}")` } : undefined
+  const style = profile.heroImage ? { backgroundImage: `linear-gradient(rgba(20,35,51,.82),rgba(20,35,51,.9)),url(${asset(profile.heroImage)})` } : undefined
   return (
     <section id="home" className="hero" style={style}>
       <div className="steel" aria-hidden="true">
@@ -139,7 +139,7 @@ export default function App() {
           <div className="grid3 proj">
             {projects.map((p, i) => (
               <Reveal key={i} delay={(i % 3) * 70}>
-                <article className={'pcard k-' + p.kind} style={{ backgroundImage: `linear-gradient(rgba(20,35,51,.72),rgba(20,35,51,.94)),url("${asset(kindImages[p.kind])}")` }}>
+                <article className={'pcard k-' + p.kind}>
                   <span className="tag">{p.kind}</span>
                   <h3>{p.org}</h3>
                   {p.place && <p className="place">{p.place}</p>}
