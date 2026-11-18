@@ -32,8 +32,12 @@ export const expertise = [
 ]
 export interface Job { title: string; company: string; project?: string; period: string; points: string[] }
 export const jobs: Job[] = [
+  { title: 'Plant Maintenance & Structural Installation', company: 'Valtera Plant Maintenance', project: 'Randwater — installation of the centrifuge', period: 'May 2026 – Present', points: [
+    'Supervised structural plant work and the installation of the centrifuge at Randwater.', 'Carried out plant maintenance activities in line with work plans.', 'Coordinated workforce deployment and allocated daily tasks.', 'Reviewed technical drawings and reported discrepancies before installation.', 'Inspected completed work against specifications and quality requirements.', 'Enforced safety procedures and conducted toolbox talks.', 'Reported progress to engineers and project management.'] },
   { title: 'Supervisor — Piping', company: 'Mogale Site', project: 'Krugersdorp', period: 'Jul 2025 – Nov 2025', points: [
     'Oversaw installation, maintenance and repair of piping systems.', 'Managed daily activities and coordinated work teams.', 'Read and interpreted piping drawings, blueprints and technical specifications.', 'Planned work schedules and allocated tasks to pipe fitters and welders.', 'Coordinated materials and equipment requirements.', 'Worked with electrical, mechanical and civil departments.', 'Inspected completed piping work against quality standards.', 'Identified safety hazards and monitored compliance.', 'Ensured proper pipe support and alignment.', 'Monitored workforce performance and productivity.', 'Reported progress to project managers and engineers.', 'Recorded incidents and accidents.'] },
+  { title: 'Dewatering & Hydro Plant Construction', company: 'Randwater', period: 'Feb 2025 – Mar 2025', points: [
+    'Took part in the construction of a dewatering and hydro plant.', 'Worked from technical drawings and specifications.', 'Followed site safety procedures and requirements.', 'Worked with the site team to coordinate daily work activities.', 'Checked work against specifications.'] },
   { title: 'Mechanical Supervisor', company: 'SPS', project: 'Krugersdorp', period: 'Jul 2024 – Nov 2024', points: [
     'Oversaw maintenance, repairs and equipment reconditioning.', 'Managed and developed staff, including orientation, training and labour relations.', 'Enforced safety procedures.', 'Planned and coordinated maintenance operations.', 'Supervised equipment acquisition and inventory.', 'Conducted project inductions and daily briefings.', 'Provided health and safety guidance.', 'Led installation and commissioning activities.'] },
   { title: 'Boilermaking Supervisor', company: 'Geecom (Pty) Ltd', period: 'May 2023 – Sep 2023', points: [
@@ -56,7 +60,9 @@ export const jobs: Job[] = [
     'Assembled steel frameworks.', 'Worked with structural girders and beams.', 'Followed detailed engineering plans.', 'Worked with elevated work platforms and scissor lifts.', 'Participated in structural steel installation activities.'] },
 ]
 export const projects = [
+  { org: 'Valtera Plant Maintenance', place: 'Randwater — centrifuge installation', role: 'Plant Maintenance & Structural Installation', kind: 'Structural' },
   { org: 'Mogale Site', place: 'Krugersdorp', role: 'Supervisor — Piping', kind: 'Piping' },
+  { org: 'Randwater', place: 'Dewatering and hydro plant', role: 'Dewatering & Hydro Plant Construction', kind: 'Structural' },
   { org: 'SPS', place: 'Krugersdorp', role: 'Mechanical Supervisor', kind: 'Mechanical' },
   { org: 'Geecom (Pty) Ltd', place: '', role: 'Boilermaking Supervisor', kind: 'Boilermaking' },
   { org: 'Murray & Roberts', place: 'Kusile Unit 1 & 2', role: 'Boilermaking Supervisor', kind: 'Boilermaking' },

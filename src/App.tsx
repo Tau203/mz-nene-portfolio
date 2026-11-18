@@ -131,7 +131,7 @@ export default function App() {
               </Reveal>) })}
           </div>
         </Section>
-        <Section id="experience" title="Professional Experience" intro="Eleven positions, most recent first. Select a role to see responsibilities.">
+        <Section id="experience" title="Professional Experience" intro="Thirteen positions, most recent first. Select a role to see responsibilities.">
           <Timeline />
           <p className="note">Dates are shown exactly as stated on the CV. Some periods overlap and have been left as supplied.</p>
         </Section>
